@@ -1,0 +1,20 @@
+.inputStyle {
+    color: var(--text);
+    border: 1px solid var(--border);
+    background-color: var(--bg-input);
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.inputStyle::placeholder {
+    color: var(--text);
+}
+
+.inputStyle:focus {
+    outline: none;
+}
+
+.labelName {
+    margin-bottom: -6px;
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'FiraSans';
+  src: url('../assets/fonts/FiraSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --text: #474747;
+  --text-h: #08060d;
+  --bg: #fff;
+  --bg-input: #f7f7f7;
+  --border: #e5e4e7;
+  --shadow:rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --theme-color: #da2007;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(16px, 2vw, 20px);
+  background-color: var(--bg);
+  color: var(--text-h);
+}
+
+body {
+  font-family: 'FiraSans', sans-serif;
+}
+
+input {
+  font-family: 'FiraSans', sans-serif;
+}
+
+input::placeholder {
+  font-family: 'FiraSans', sans-serif;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #b1b1b1;
+    --text-h: #f3f4f6;
+    --bg: #111111;
+    --bg-input: #161616;
+    --border: #222222;
+    --shadow:rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+  }
+}
+
+.primaryDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+

@@ -1,0 +1,19 @@
+.navbarStyle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.logoLaravel {
+    height: 40px;
+    margin-left: 4px;
+}
+
+.menuIcon {
+    height: 30px;
+    width: 30px;
+    color: var(--text);
+}

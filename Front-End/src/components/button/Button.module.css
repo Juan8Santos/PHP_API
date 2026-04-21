@@ -1,0 +1,36 @@
+.buttonStyle {
+    background-color: var(--theme-color);
+    color: #fff;
+    border: 1px solid var(--theme-color);
+    font-family: Lexend, sans-serif;
+    transition: 0.2s;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.buttonStyle:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+}
+
+.buttonStyleLoading {
+    background-color: #9e9e9e;
+    color: #fff;
+    border: 1px solid #9e9e9e;
+    font-family: Lexend, sans-serif;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .buttonStyle:hover {
+        background-color: transparent;
+        color: var(--theme-color);
+    }
+
+    .buttonStyle:active {
+        transform: scale(1);
+    }
+}
