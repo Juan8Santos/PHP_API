@@ -98,7 +98,7 @@ export default function AuthLayout() {
                     labelName="Data de nascimento"
                 />
                 <p className={styles.error}>{errorMessage}</p>
-                <Button type={"submit"} textContent={"Entrar"} style={{marginTop: "15px"}} isLoading={loading}/>
+                <Button type={"submit"} textContent={"Confirmar"} style={{marginTop: "15px"}} isLoading={loading}/>
             </form>
         </section>
     );
