@@ -58,6 +58,8 @@ export default function ManageUserPage() {
     <div className={styles.manageUserPage}>
       <Navbar />
       <div className={styles.usersArea}>
+        <h2>Bem vindo ao seção gerenciar usuários.</h2>
+        <p>Aqui você pode usurfruir de funções como editar e excluir usuários. Aproveite!</p>
         {users.map((user) => (
           <UserCard
             key={user.id}
